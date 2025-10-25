@@ -1,0 +1,15 @@
+@startuml Classes
+title APIs
+skinparam linetype ortho
+'left to right direction
+
+class Cientista {
+}
+
+class Agendamento {
+
+    +validarDados()
+    +verificarNegocios()
+}
+
+@enduml

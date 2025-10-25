@@ -1,0 +1,1 @@
+Os modelos foram definidos no arquivo MODELOS.plantuml

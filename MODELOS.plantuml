@@ -1,0 +1,20 @@
+@startuml Classes
+title APIs
+skinparam linetype ortho
+'left to right direction    
+
+class Details{
+    - agendamento_id String
+    - cientista_id String
+    - horario_inicio_utc Date
+}
+
+class Log {
+- timestamp_utc Date
+- level String
+- event_type String
+- service String
+- details Details
+}
+
+@enduml
