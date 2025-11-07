@@ -1,67 +1,48 @@
-INFO:2025-10-31 22:32:07,425:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+INFO:2025-11-07 20:04:40,418:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-INFO:2025-10-31 22:32:07,425:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:2025-10-31 22:32:07,426:werkzeug: * Restarting with stat
-WARNING:2025-10-31 22:32:07,582:werkzeug: * Debugger is active!
-INFO:2025-10-31 22:32:07,592:werkzeug: * Debugger PIN: 527-159-068
-INFO:2025-10-31 22:32:18,122:servico-agendamento:Cientista criado com sucesso
-INFO:2025-10-31 22:32:18,125:werkzeug:127.0.0.1 - - [31/Oct/2025 22:32:18] "[35m[1mPOST /cientistas HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:33:54,836:werkzeug:127.0.0.1 - - [31/Oct/2025 22:33:54] "GET /cientistas HTTP/1.1" 200 -
-INFO:2025-10-31 22:34:09,430:werkzeug:127.0.0.1 - - [31/Oct/2025 22:34:09] "GET /agendamentos HTTP/1.1" 200 -
-INFO:2025-10-31 22:34:13,204:werkzeug:127.0.0.1 - - [31/Oct/2025 22:34:13] "GET /agendamentos HTTP/1.1" 200 -
-INFO:2025-10-31 22:34:31,442:werkzeug:127.0.0.1 - - [31/Oct/2025 22:34:31] "[33mPOST /agendamentos/1/cancelar HTTP/1.1[0m" 404 -
-INFO:2025-10-31 22:35:24,467:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:35:24,471:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:35:24,473:servico-agendamento:{"timestamp_utc": "2025-11-01T01:35:24.473774Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 1, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:35:24,474:werkzeug:127.0.0.1 - - [31/Oct/2025 22:35:24] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:35:51,710:servico-agendamento:Cientista criado com sucesso
-INFO:2025-10-31 22:35:51,712:werkzeug:127.0.0.1 - - [31/Oct/2025 22:35:51] "[35m[1mPOST /cientistas HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:35:53,759:servico-agendamento:Cientista criado com sucesso
-INFO:2025-10-31 22:35:53,760:werkzeug:127.0.0.1 - - [31/Oct/2025 22:35:53] "[35m[1mPOST /cientistas HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:37:34,111:werkzeug:127.0.0.1 - - [31/Oct/2025 22:37:34] "GET /cientistas HTTP/1.1" 200 -
-INFO:2025-10-31 22:37:52,203:werkzeug:127.0.0.1 - - [31/Oct/2025 22:37:52] "GET /agendamentos HTTP/1.1" 200 -
-INFO:2025-10-31 22:38:08,454:servico-agendamento:Agendamento 1 cancelado
-WARNING:2025-10-31 22:38:08,456:servico-agendamento:{"timestamp_utc": "2025-11-01T01:38:08.455974Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CANCELADO", "service": "servico-agendamento", "details": {"agendamento_id": 1, "cientista_id": 1}}
-INFO:2025-10-31 22:38:08,456:werkzeug:127.0.0.1 - - [31/Oct/2025 22:38:08] "POST /agendamentos/1/cancelar HTTP/1.1" 200 -
-INFO:2025-10-31 22:38:23,115:servico-agendamento:GET /time chamado. Retornando 2025-11-01T01:38:23.115946Z
-INFO:2025-10-31 22:38:23,117:werkzeug:127.0.0.1 - - [31/Oct/2025 22:38:23] "GET /time HTTP/1.1" 200 -
-INFO:2025-10-31 22:48:43,741:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,741:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,742:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,742:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,742:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,744:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,744:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,745:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,745:servico-agendamento:Salvando novo agendamento no BD
-INFO:2025-10-31 22:48:43,746:servico-agendamento:Salvando novo agendamento no BD
-INFO:2025-10-31 22:48:43,746:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,747:servico-agendamento:Requisição recebida para POST /agendamentos
-INFO:2025-10-31 22:48:43,747:servico-agendamento:Salvando novo agendamento no BD
-INFO:2025-10-31 22:48:43,748:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,749:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.749077Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 3, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,749:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,750:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,750:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.750568Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 6, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,750:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,750:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,751:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.751120Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 7, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,751:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,752:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,752:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.752754Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 8, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,753:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,753:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,753:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.753647Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 9, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,753:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-WARNING:2025-10-31 22:48:43,754:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.754441Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 5, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,754:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,756:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,756:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.756772Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 10, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,756:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-WARNING:2025-10-31 22:48:43,758:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.758403Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 2, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,758:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-WARNING:2025-10-31 22:48:43,759:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.759540Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 4, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,759:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
-INFO:2025-10-31 22:48:43,769:servico-agendamento:Salvando novo agendamento no BD
-WARNING:2025-10-31 22:48:43,769:servico-agendamento:{"timestamp_utc": "2025-11-01T01:48:43.769609Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 11, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
-INFO:2025-10-31 22:48:43,769:werkzeug:127.0.0.1 - - [31/Oct/2025 22:48:43] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
+INFO:2025-11-07 20:04:40,418:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:2025-11-07 20:04:40,418:werkzeug: * Restarting with stat
+WARNING:2025-11-07 20:04:40,585:werkzeug: * Debugger is active!
+INFO:2025-11-07 20:04:40,593:werkzeug: * Debugger PIN: 105-467-325
+INFO:2025-11-07 20:04:52,181:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,181:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,181:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,181:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,182:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,183:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,183:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,183:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,183:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,184:servico-agendamento:Tentando adquirir lock para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,193:servico-agendamento:Lock adquirido com sucesso para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,197:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,198:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,198:servico-agendamento:Salvando novo agendamento no BD
+INFO:2025-11-07 20:04:52,199:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,199:servico-agendamento:Falha ao adquirir lock, recurso ocupado (agendamento_1_2025-12-01T03:00:00Z)
+INFO:2025-11-07 20:04:52,203:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,203:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,203:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,203:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,204:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,204:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,204:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,205:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,205:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,205:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,205:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+WARNING:2025-11-07 20:04:52,205:servico-agendamento:{"timestamp_utc": "2025-11-07T23:04:52.205564Z", "level": "AUDIT", "event_type": "AGENDAMENTO_CRIADO", "service": "servico-agendamento", "details": {"agendamento_id": 43, "cientista_id": 1, "horario_inicio_utc": "2025-12-01T03:00:00Z"}}
+INFO:2025-11-07 20:04:52,205:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,205:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,206:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,206:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,206:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,206:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,206:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[31m[1mPOST /agendamentos HTTP/1.1[0m" 409 -
+INFO:2025-11-07 20:04:52,207:servico-agendamento:Lock liberado para o recurso agendamento_1_2025-12-01T03:00:00Z
+INFO:2025-11-07 20:04:52,207:werkzeug:127.0.0.1 - - [07/Nov/2025 20:04:52] "[35m[1mPOST /agendamentos HTTP/1.1[0m" 201 -
