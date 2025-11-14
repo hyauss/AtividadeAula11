@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SCTEC - Sincronização de Tempo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #clock-box {
+            padding: 20px;
+            border: 2px solid #333;
+            width: 350px;
+        }
+        button {
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>SCTEC – Sincronização de Tempo</h1>
+
+<div id="clock-box">
+    <p><strong>Hora sincronizada:</strong></p>
+    <p id="synced-time">Carregando...</p>
+</div>
+
+<br>
+
+<button id="cancel-button" disabled>Cancelar Agendamento</button>
+
+<script>
+// --- FUNÇÃO DE SINCRONIZAÇÃO DE TEMPO (Cristian simples) ---
+async function sincronizarTempo() {
+    const t0 = Date.now();
+
+    const resp = await fetch("/api/time");
+    const data = await resp.json();
+
+    const t1 = Date.now();
+
+    const RTT = t1 - t0;
+    const offset = RTT / 2;
+
+    const horaServidor = new Date(data.time);
+    const horaSincronizada = new Date(horaServidor.getTime() + offset);
+
+    document.getElementById("synced-time").textContent =
+        horaSincronizada.toLocaleString("pt-BR");
+    
+    // Guarda HATEOAS de cancelamento (se existir)
+    if (data._links && data._links.cancel) {
+        const btn = document.getElementById("cancel-button");
+        btn.disabled = false;
+        btn.dataset.cancelUrl = data._links.cancel.href;
+    }
+}
+
+document.getElementById("cancel-button").addEventListener("click", async () => {
+    const href = document.getElementById("cancel-button").dataset.cancelUrl;
+
+    const resp = await fetch(href, { method: "POST" });
+    const result = await resp.json();
+
+    alert("Agendamento cancelado!");
+});
+
+sincronizarTempo();
+setInterval(sincronizarTempo, 5000);
+</script>
+
+</body>
+</html>
