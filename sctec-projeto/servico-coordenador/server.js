@@ -43,6 +43,11 @@ app.post("/unlock", (req, res) => {
 });
 
 const PORT = 3000;
+// Rota GET / (página inicial)
+app.get("/", (req, res) => {
+    res.send("🟢 Coordenador está funcionando! Use POST /agendar");
+});
+
 app.listen(PORT, () => {
   console.log(`🟢 Coordenador ativo na porta ${PORT}`);
 });
